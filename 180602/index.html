@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <link rel="stylesheet"  type="text/css" href="css/base/reset.css"/>
+  <link rel="stylesheet"  type="text/css" href="css/base/common.css"/>
+  
+  <title>숙제 및 응용</title>
+</head>
+<!--
+  숙제 및 응용
+1. 마우스오버의 다양한 이벤트 방법 (이미지변경, 트렌지션 ,,,)
+2. gnb오버했을때 밑에 bar가 생기는건 gnb오버하고 밑에 바에 마우스오버해도 bar가 보여져야됨.
+   gnb와 bar 사이엔 간격이 있어요 
+3. radio를 활용한 탭 만들기
+4. 애니메이션 효과로 앨범만들기 (오버했을때 효과들)
+-->
+<body>
+  <header>
+    <h1>
+      <a href="#"><img src="img/logoGradi.png" alt="main"/></a>
+    </h1>
+    <nav>
+     <ul>
+      <li><a href="#">테스트1</a>
+        <ul class="inner">
+          <li><a href="#">테스트1-1</a></li>
+          <li><a href="#">테스트1-2</a></li>
+          <li><a href="#">테스트1-3</a></li>
+        </ul>
+    </li>
+      <li><a href="#">테스트2</a>
+        <ul class="inner">
+          <li><a href="#">테스트2-1</a></li>
+          <li><a href="#">테스트2-2</a></li>
+          <li><a href="#">테스트2-3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">테스트3</a>
+        <ul class="inner">
+          <li><a href="#">테스트3-1</a></li>
+          <li><a href="#">테스트3-2</a></li>
+          <li><a href="#">테스트3-3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">테스트4</a>
+        <ul class="inner">
+          <li><a href="#">테스트4-1</a></li>
+          <li><a href="#">테스트4-2</a></li>
+          <li><a href="#">테스트4-3</a></li>
+        </ul>
+      </li>
+      <div class="bar"></div>
+    </ul>
+  </nav>  
+  </header>
+  <section>
+    <h2>gallery</h2>
+    <div>
+      <ul>
+        <li>
+            <a href="#">
+            <figure>
+                <img src="img/01.jpg" alt="common1">
+                <img src="img/02.png" alt="hover1"/>
+                <figcaption>
+                  <dl>
+                    <dt>피규어</dt>
+                      <dd>img태그로</dd>
+                      <dd>이미지변경</dd>
+                    </dl>
+                </figcaption>
+              </figure>
+            </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/03.jpg" alt="common2">
+            <img src="img/04.jpg" alt="hover2"/>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+              <figure>
+                  <img src="img/05.jpg" alt="common3">
+                  <img src="img/06.jpg" alt="hover3"/>
+                  <figcaption>
+                    <dl>
+                    <dt>피규어</dt>
+                      <dd>img태그로</dd>
+                      <dd>이미지변경</dd>
+                    </dl>
+                  </figcaption>
+                </figure>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/07.jpg" alt="common4">
+            <img src="img/08.jpg" alt="hover4"/>
+          </a>
+        </li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </div>
+  </section>
+  <section>
+    <h2>radio를 활용한 tab 만들기</h2>
+    <div>
+    <label for ="tab1"></label>
+    <label for ="tab2"></label>
+    <label for ="tab3"></label>
+  </div>
+    <input type="radio" id="tab1" checked="checked" value="" name="#"/>
+    <article>
+      <h4>radio 체크 탭 첫 페이지 입니다. article 안의 내용입니다.</h4>
+      <p>무엇을 넣을까요?</p>
+    </article>
+
+    <input type="radio" id="tab2" value="" name="#"/>
+    <section>
+      <h4>section 안의 내용입니다.</h4>
+      <p>무엇을 넣을까요?</p>
+    </section>
+
+    <input type="radio" id="tab3" value="" name="#"/>
+    <div>
+      <h4>div 안의 내용입니다.</h4>
+      <p>무엇을 넣을까요?</p>
+    </div>
+  </section>
+
+</body>
+</html>
